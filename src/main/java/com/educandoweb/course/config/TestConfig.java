@@ -68,8 +68,8 @@ public class TestConfig implements CommandLineRunner {
 		productRepository.saveAll(Arrays.asList(p1,p2,p3,p4,p5));
 		
 		//Este método é implementado a partir do commandLineRunner e tudo que estiver aqui dentro executa junto com a aplicação
-		User u1 = new User(null, "Bob", "bob@gmail.com", "9999999", "12345");
-		User u2 = new User(null, "Charlie", "charlie@gmail.com", "9999999", "12345");
+		User u1 = new User(null, "Maria Brown", "maria@gmail.com", "123456", "988888");
+		User u2 = new User(null, "Alex Green", "alex@gmail.com", "123456", "977777");
 		userRepository.saveAll(Arrays.asList(u1,u2));
 		
 		Order o1 = new Order(null, Instant.parse("2019-06-20T19:53:07Z"), OrderStatus.PAID, u1);
