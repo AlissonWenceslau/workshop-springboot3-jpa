@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.educandoweb.course.entities.Product;
 import com.educandoweb.course.repositories.ProductRepository;
+import com.educandoweb.course.services.exceptions.ResourceNotFoundException;
 
 //Registra a classe como componente do spring e ele vai poder ser injetado com a anotation @Autowired
 @Service
@@ -24,6 +25,6 @@ public class ProductService {
 		
 		Optional<Product> obj = repository.findById(id);
 		
-		return  obj.get();
+		return  obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 }
