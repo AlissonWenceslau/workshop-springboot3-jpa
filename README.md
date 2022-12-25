@@ -5,6 +5,9 @@
 
 > Trata-se de um projeto Web services com Spring Boot com intuito de simular compras online!
 
+## Diagrama de objetos
+![Diagrama de Objetos](assets/img/object_diagram.png)
+
 ### Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
